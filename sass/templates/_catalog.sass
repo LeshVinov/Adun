@@ -1,0 +1,78 @@
+.catalog
+    &-heading
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-bottom: 3.75rem
+        &__title
+            font-size: 2.375rem
+            margin-right: 1.375rem
+    &-cards
+        margin-bottom: 3.125rem
+        &__content
+            display: flex
+            justify-content: space-between
+            align-items: center 
+    .card
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding-top: 1.5625rem
+        padding-bottom: 1.5625rem
+        max-width: 19.6875rem
+        height: 28.375rem
+        background: $black
+        border-radius: 0.9375rem
+        &:first-of-type
+            .card
+                &-img
+                    &::before
+                        content: ''
+                        position: absolute
+                        top: 0
+                        left: 0
+                        width: 100%
+                        height: 100%
+                        background: url('../img/danger.png') no-repeat 0 40px
+        &:nth-of-type(2)
+            .card
+                &-img
+                    padding: 0
+                    padding-bottom: 1.9625rem
+        &:nth-of-type(3)
+            .card
+                &-img
+                    display: flex
+                    justify-content: center
+                    width: 100%
+                    padding: 0
+                    padding-bottom: 0.8125rem             
+        &-img
+            padding: 0 2.275rem
+            padding-bottom: 2.5875rem
+            border-bottom: 3px solid $white
+            position: relative
+        &-title
+            display: flex
+            justify-content: space-between
+            padding: 0 3.625rem
+            font-size: 1.125rem
+            margin-top: 1.4375rem
+            margin-bottom: 1.875rem
+        &-desc
+            font-size: 1.125rem
+            padding: 0 0.875rem
+            text-align: center
+            margin-bottom: 1.875rem
+        &-button
+            position: relative
+            padding: 0.25rem 1.5rem 0.25rem 4rem
+            &::before
+                content: ''
+                position: absolute
+                top: 4px
+                left: 23px
+                width: 21px
+                height: 21px
+                background: url('../img/shopping-cart.svg') no-repeat center
